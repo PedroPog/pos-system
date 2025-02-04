@@ -1,0 +1,9 @@
+<button mat-icon-button [routerLink]="['home']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}"><mat-icon>line_axis</mat-icon></button>
+<button mat-icon-button [routerLink]="['balcao']" routerLinkActive="router-link-active" ><mat-icon>point_of_sale</mat-icon></button>
+<button mat-icon-button [routerLink]="['mesa']" routerLinkActive="router-link-active" ><mat-icon>inventory_2</mat-icon></button>
+<button mat-icon-button [routerLink]="['terminal']" routerLinkActive="router-link-active" ><mat-icon>payments</mat-icon></button>
+<button mat-icon-button [routerLink]="['perfil']" routerLinkActive="router-link-active" ><mat-icon>person</mat-icon></button>
+<button mat-icon-button [routerLink]="['caixa']" routerLinkActive="router-link-active" ><mat-icon>settings</mat-icon></button>
+@if(!isPwaInstalled && deferredPrompt){
+  <button mat-icon-button (click)="installPWA()"><mat-icon>install_desktop</mat-icon></button>
+}

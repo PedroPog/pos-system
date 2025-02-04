@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+  --font-min:1rem;
+  --font-max:2rem;
+
+  --primary-color:#ff830a;
+  --secundary-color:#fff8ec;
+  --text-color:#ffffff;
+  --text-secundary-color:#000000;
+  --white-color:#ffffff;
+  --black-color:#000000;
+  --family-font:Roboto, "Helvetica Neue", sans-serif;
+
+}
+.dark-theme{
+  --primary-color:#ff9d42;
+  --secundary-color:#2b2b2b;
+  --text-color:#000000;
+  --text-secundary-color:#ffffff;
+}
+
+#mat-badge-content-0{
+  background-color: var(--secundary-color);
+  color: var(--text-secundary-color);
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: var(--family-font); background-color: var(--secundary-color); }

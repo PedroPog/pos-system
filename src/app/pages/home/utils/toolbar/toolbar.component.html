@@ -1,0 +1,27 @@
+<button mat-icon-button><mat-icon>menu</mat-icon></button>
+<section>
+  <button mat-icon-button><mat-icon>sort_by_alpha</mat-icon></button>
+  <button mat-icon-button><mat-icon>calculate</mat-icon></button>
+  @if (modoInterface) {
+    <button mat-icon-button (click)="toggleTheme()"><mat-icon>nightlight</mat-icon></button>
+  }@else{
+    <button mat-icon-button (click)="toggleTheme()"><mat-icon>brightness_6</mat-icon></button>
+  }
+  @if(conexao){
+    <button mat-icon-button><mat-icon>wifi</mat-icon></button>
+  }@else{
+    <button mat-icon-button><mat-icon>signal_wifi_off</mat-icon></button>
+  }
+  <button mat-icon-button>
+    @if (notificaoNumber==0) {
+      <mat-icon matBadgeColor="accent">
+        headset_mic
+      </mat-icon>
+    }@else{
+      <mat-icon [matBadge]="notificaoNumber" matBadgeColor="accent">
+        headset_mic
+      </mat-icon>
+    }
+  </button>
+  <button mat-icon-button><mat-icon>info</mat-icon></button>
+</section>
